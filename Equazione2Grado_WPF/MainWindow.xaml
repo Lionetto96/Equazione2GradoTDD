@@ -1,0 +1,36 @@
+﻿<Window x:Class="Equazione2Grado_WPF.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Equazione2Grado_WPF"
+        mc:Ignorable="d"
+        Title="Equazione2Grado" Height="450" Width="800">
+    <Grid x:Name="Eq2Grado">
+        <Button x:Name="btnRisolvi" Content="RISOLVI" HorizontalAlignment="Left" Margin="34,212,0,0" VerticalAlignment="Top" Width="242" Height="56" Click="btnRisolvi_Click" Foreground="#FF121412" BorderBrush="#FFC83A3A" Background="#FF59D24F" FontSize="18" FontWeight="Bold"/>
+        <Button x:Name="btnReset" Content="RESET" HorizontalAlignment="Left" Margin="30,293,0,0" VerticalAlignment="Top" Width="396" Height="56" RenderTransformOrigin="0.5,0.5" Click="btnReset_Click" Background="#FF88B751" FontSize="18" FontWeight="Bold" BorderBrush="#FFFC1111">
+            <Button.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform AngleY="-0.274"/>
+                    <RotateTransform/>
+                    <TranslateTransform Y="-0.495"/>
+                </TransformGroup>
+            </Button.RenderTransform>
+        </Button>
+        <TextBox x:Name="TextRisultato" HorizontalAlignment="Left" Height="56" Margin="282,212,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="148" IsReadOnly="True" FontSize="18" BorderBrush="#FFDF4242"/>
+        <Label Content="Risultato/i" HorizontalAlignment="Left" Height="56" Margin="293,184,0,0" VerticalAlignment="Top" Width="126" FontWeight="Bold" FontFamily="Cascadia Code" FontSize="18" RenderTransformOrigin="0.48,-0.776"/>
+        <TextBox x:Name="TextCoefficienteA" HorizontalAlignment="Left" Height="56" Margin="34,104,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="40" FontSize="18" BorderBrush="#FF2F4A9C" RenderTransformOrigin="0.588,1.188" PreviewTextInput="NumericOnly"  />
+        <TextBox x:Name="TextCoefficienteB" HorizontalAlignment="Left" Height="56" Margin="147,104,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="42" RenderTransformOrigin="0.538,-0.276" FontSize="18" BorderBrush="#FF314FAB" PreviewTextInput="NumericOnly" />
+        <TextBox x:Name="TextCoefficienteC" HorizontalAlignment="Left" Height="56" Margin="259,104,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="47" RenderTransformOrigin="-0.585,0.545" FontSize="18" BorderBrush="#FF2A4AAC" PreviewTextInput="NumericOnly" />
+        <Label Content="x^2 +" HorizontalAlignment="Left" Height="42" Margin="74,111,0,0" VerticalAlignment="Top" Width="94" FontWeight="Bold" FontFamily="Cascadia Code" FontSize="20" RenderTransformOrigin="0.527,-0.201"/>
+        <Label Content="x +" HorizontalAlignment="Left" Height="42" Margin="194,111,0,0" VerticalAlignment="Top" Width="94" FontWeight="Bold" FontFamily="Cascadia Code" FontSize="20"/>
+        <Label Content="= 0" HorizontalAlignment="Left" Height="42" Margin="311,111,0,0" VerticalAlignment="Top" Width="94" FontWeight="Bold" FontFamily="Cascadia Code" FontSize="20"/>
+        <Image HorizontalAlignment="Left" Height="0" Margin="306,287,0,0" VerticalAlignment="Top" Width="68"/>
+        <Label Content="a" HorizontalAlignment="Left" Height="29" Margin="54,75,0,0" VerticalAlignment="Top" Width="40" FontSize="18" RenderTransformOrigin="0.862,1.484"/>
+        <Label Content="b" HorizontalAlignment="Left" Height="29" Margin="168,75,0,0" VerticalAlignment="Top" Width="40" FontSize="18" RenderTransformOrigin="0.862,1.484"/>
+        <Label Content="c" HorizontalAlignment="Left" Height="29" Margin="286,75,0,0" VerticalAlignment="Top" Width="40" FontSize="18" RenderTransformOrigin="0.862,1.484"/>
+        <Image HorizontalAlignment="Left" Height="283" Margin="474,0,0,0" VerticalAlignment="Center" Width="289" Source="C:\Users\alessia.lionetto\source\repos\Week8\imgEq.jpg"/>
+
+    </Grid>
+</Window>
